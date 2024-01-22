@@ -19,7 +19,7 @@ export const Messages = () => {
                     <span className={styles.date} key={item.type + index}>{item.date}</span>
                 ) : (
                     <div key={item.type + index} className={`${styles.messageContainer} ${item.direction === 'incoming' ? styles.incoming : styles.outcoming}`}>
-                        {item.user?.avatar && <Avatar imageUrl={item.user?.avatar} />}
+                        {item.user?.avatar && <Avatar imageUrl={item.user?.avatar} isOnline={true} />}
                         <MessageItem {...item} />
                     </div>
                 )

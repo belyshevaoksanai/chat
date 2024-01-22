@@ -3,11 +3,13 @@
 }
 
 .avatarImage {
-    border-radius: 50%;
-    border: 2px solid white;
-    overflow: hidden;
-
     position: relative;
+    border: 2px solid white;
+    border-radius: 50%;
+    
+    img {
+        border-radius: 50%;
+    }
 }
 
 .avatarImage::after {
@@ -20,4 +22,16 @@
     border: 2px solid black;
     border-radius: 50%;
     opacity: 10%;
+}
+
+.online::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: 0;
+    bottom: 0;
+    background-color: #34C759;
+    border-radius: 50%;
+    border: 2px solid white;
 }
