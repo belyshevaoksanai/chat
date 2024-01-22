@@ -32,7 +32,7 @@ export const Form = () => {
     };
 
     const onMessageChange = (e: React.FormEvent<HTMLInputElement>) => {
-        setMessage(e.target.value);
+        setMessage((e.target as HTMLInputElement).value);
     }
 
     return (
