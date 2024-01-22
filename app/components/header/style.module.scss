@@ -1,0 +1,30 @@
+.header {
+    box-shadow: inset 0px -1px 0px #E5E5EA;
+    padding: 17px 13px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .groupName {
+        color: #2C2C2E;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .lastTime {
+        color: #666668;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

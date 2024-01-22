@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+
+    padding: 16px;
+
+    .date {
+        margin-bottom: 20px;
+        align-self: center;
+
+        color: #666668;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    & > div {
+        margin-bottom: 6px;
+    }
+}
+
+.messageContainer {
+    display: flex;
+
+    gap: 10px;
+
+    &.outcoming {
+        align-self: flex-end;
+    }
+}

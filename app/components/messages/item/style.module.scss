@@ -1,0 +1,92 @@
+.messageContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+.message {
+    padding: 4px 8px;
+    position: relative;
+
+    display: grid;
+    grid-template-areas: "f t"
+        "k i";
+    gap: 8px;
+
+    max-width: 300px;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.incoming {
+    border-radius: 0px 6px 6px 6px;
+    align-self: flex-start;
+    background: #F2F2F7;
+    color: #2C2C2E;
+
+    .time {
+        color: #666668;
+    }
+
+    .arrow {
+        position: absolute;
+        left: -10px;
+    }
+}
+
+.outcoming {
+    border-radius: 6px 0px 6px 6px;
+    align-self: flex-end;
+    background: #007AFF;
+    color: #FFFFFF;
+
+    .arrow {
+        position: absolute;
+        right: -10px;
+    }
+}
+
+.textContainer {
+    grid-area: f;
+
+    display: flex;
+    flex-direction: column;
+
+    .userInfo {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+
+        &>span {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 18px;
+        }
+
+        &>span:not(:first-child) {
+            color: #666668;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+.time {
+    white-space: nowrap;
+    align-self: flex-end;
+
+    grid-area: i;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

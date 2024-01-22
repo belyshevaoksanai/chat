@@ -1,0 +1,7 @@
+.container {
+    display: flex;
+
+    & div:not(:first-of-type) {
+        margin-left: -8px;
+    }
+}
